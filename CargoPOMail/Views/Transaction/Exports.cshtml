@@ -1,0 +1,313 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h3 style="margin-top:0">Exports</h3>
+
+
+
+<div class="panel panel-warning">
+    <div class="panel-heading">Flight Details</div>
+    <div class="panel-body">
+
+
+        <div class="form-group col-sm-6">
+            <label class="control-label">Airline Code</label>
+            <div class="form-inline">
+                <input type="text" class="form-control" id="input-add-initiative-ec" placeholder="Enter Code" style="width:25%">
+                <input type="text" class="form-control" id="input-add-initiative-ec" placeholder="Airline" disabled style="width:70%">
+            </div>
+
+        </div>
+        <div class="form-group col-sm-3 col-sm-offset-3">
+            <label class="control-label">Reference No</label>
+            <input type="text" class="form-control" id="input-add-initiative-efd" placeholder="Select Date" disabled>
+        </div>
+        <div class="form-group col-sm-3">
+            <label class="control-label">Flight No</label>
+            <input type="text" class="form-control" id="input-add-initiative-er" placeholder="">
+        </div>
+        <div class="form-group col-sm-3">
+            <label class="control-label">Route </label>
+            <input type="text" class="form-control" id="input-add-initiative-sd" placeholder="Select Date" readonly>
+        </div>
+        <div class="form-group col-sm-4">
+            <label class="control-label">Uplift Date </label>
+            <input type="text" class="form-control" id="input-add-initiative-ed" placeholder="Select Date" readonly>
+        </div>
+    </div>
+
+
+
+    <div class="panel-footer">
+        <div class="panel panel-warning">
+            <div class="panel-heading">Exports & Transhipments</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div>
+                            <table id="tblOffLoadCharges" class="cHIN-Table table" style="text-align: center;">
+                                <thead class="cHIN-Table-Header">
+                                    <tr>
+                                        <th style="vertical-align: middle; text-align: center; ">Mail Origin</th>
+                                        <th style="vertical-align: middle; text-align: center; ">Mail Destination</th>
+                                        <th style="vertical-align: middle; text-align: center; ">Despatch No</th>
+                                        <th style="vertical-align: middle; text-align: center; ">No of Bags</th>
+                                        <th style="vertical-align: middle; text-align: center; ">LC\AO</th>
+                                        <th style="vertical-align: middle; text-align: center; ">CP</th>
+                                        <th style="vertical-align: middle; text-align: center; ">MV</th>
+                                        <th style="vertical-align: middle; text-align: center; ">EMS</th>
+                                        <th style="vertical-align: middle; text-align: center; ">Status</th>
+                                        <th style="vertical-align: middle; text-align: center; ">Remark</th>
+                                        <th style="vertical-align: middle; text-align: left; width:7% " class="thButton">
+                                            <button class="grdButtonAdd"><i class="fa fa-plus" style="font-size: 1.4em;"></i></button>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell thButton" style="text-align: left">
+                                            <button class="grdBtnEdit"><i class="fa fa-pencil"></i></button>
+                                            @*<button class="grdBtnSave"><i class="fa fa-check"></i></button>*@
+                                            @*<button class="grdBtnDelete"><i class="fa fa-trash-o"></i></button>*@
+                                            @*<button class="grdBtnCancel"><i class="fa fa-times"></i></button>*@
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell thButton" style="text-align: left">
+                                            <button class="grdBtnEdit"><i class="fa fa-pencil"></i></button>
+                                            @*<button class="grdBtnSave"><i class="fa fa-check"></i></button>*@
+                                            @*<button class="grdBtnDelete"><i class="fa fa-trash-o"></i></button>*@
+                                            @*<button class="grdBtnCancel"><i class="fa fa-times"></i></button>*@
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell thButton" style="text-align: left">
+                                            <button class="grdBtnEdit"><i class="fa fa-pencil"></i></button>
+                                            @*<button class="grdBtnSave"><i class="fa fa-check"></i></button>*@
+                                            @*<button class="grdBtnDelete"><i class="fa fa-trash-o"></i></button>*@
+                                            @*<button class="grdBtnCancel"><i class="fa fa-times"></i></button>*@
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell thButton" style="text-align: left">
+                                            <button class="grdBtnEdit"><i class="fa fa-pencil"></i></button>
+                                            @*<button class="grdBtnSave"><i class="fa fa-check"></i></button>*@
+                                            @*<button class="grdBtnDelete"><i class="fa fa-trash-o"></i></button>*@
+                                            @*<button class="grdBtnCancel"><i class="fa fa-times"></i></button>*@
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell thButton" style="text-align: left">
+                                            <button class="grdBtnEdit"><i class="fa fa-pencil"></i></button>
+                                            @*<button class="grdBtnSave"><i class="fa fa-check"></i></button>*@
+                                            @*<button class="grdBtnDelete"><i class="fa fa-trash-o"></i></button>*@
+                                            @*<button class="grdBtnCancel"><i class="fa fa-times"></i></button>*@
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="cHIN-Table-cell" colspan="3">
+                                            Total
+                                        </td>
+
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                            <input class="disabled-text cHIN-Table-input charges_AirlineCode" type="text" value="" maxlength="2" style="text-align:center; text-transform: uppercase" onkeypress="return /[A-Z0-9]/i.test(event.key)" />
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                        </td>
+                                        <td class="cHIN-Table-cell">
+                                        </td>
+                                        <td class="cHIN-Table-cell thButton" style="text-align: left">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-inline col-sm-5 col-sm-offset-7">
+                    <label class="control-label">Total Weight For Flight </label>
+                    <input type="text" class="form-control" id="" placeholder="Total Weight In KGs" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-offset-9">
+        <button class="btn btn-warning">Save</button>
+        <button class="btn btn-soundcloud">Clear</button>
+        <button class="btn btn-success">View</button>
+        <button class="btn btn-github">Exit</button>
+
+    </div>
+
+</div>
+
+
+
+
+
