@@ -1,46 +1,61 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h3 style="margin-top:0">Imports</h3>
+<h4 style="margin-top:0" id="import_title">Manifest</h4>
 
 
 
 <div class="panel panel-warning">
-    <div class="panel-heading">Flight Details</div>
+    <div class="panel-heading" style="padding-top:5px;padding-bottom:5px;">
+        Flight Details
+        <span class="col-md-offset-8">
+            Select Manifest &nbsp &nbsp
+            <input type="checkbox" class="btn-warning" id="input-update-task-status" data-width="80" data-toggle="toggle" data-on="Import" data-off="Export">
+        </span>
+       
+    </div>
     <div class="panel-body">
 
 
-        <div class="form-group col-sm-6">
+        @*<div class="form-group col-sm-6">
             <label class="control-label">Airline Code</label>
             <div class="form-inline">
                 <input type="text" class="form-control" id="input-add-initiative-ec" placeholder="Enter Code" style="width:25%">
                 <input type="text" class="form-control" id="input-add-initiative-ec" placeholder="Airline" disabled style="width:70%">
             </div>
 
-        </div>
-        <div class="form-group col-sm-3 col-sm-offset-3">
-            <label class="control-label">Reference No</label>
-            <input type="text" class="form-control" id="input-add-initiative-efd" placeholder="Select Date" disabled>
-        </div>
+        </div>*@
         <div class="form-group col-sm-3">
             <label class="control-label">Flight No</label>
             <input type="text" class="form-control" id="input-add-initiative-er" placeholder="">
         </div>
         <div class="form-group col-sm-3">
-            <label class="control-label">Route </label>
-            <input type="text" class="form-control" id="input-add-initiative-sd" placeholder="Select Date" readonly>
+            <label class="control-label">Sector </label>
+            <input type="text" class="form-control" id="input-add-initiative-sd" placeholder="Select Sector" readonly>
         </div>
-        <div class="form-group col-sm-4">
-            <label class="control-label">Uplift Date </label>
+        <div class="form-group col-sm-3">
+            <label class="control-label">Flight Date </label>
             <input type="text" class="form-control" id="input-add-initiative-ed" placeholder="Select Date" readonly>
         </div>
+        @*<div class="form-group col-sm-3">
+            <label class="control-label">Reference No</label>
+            <input type="text" class="form-control" id="input-add-initiative-efd" placeholder="" disabled>
+        </div>*@
+
     </div>
 
 
 
     <div class="panel-footer">
         <div class="panel panel-warning">
-            <div class="panel-heading">Imports & Transhipments</div>
+            <div class="panel-heading">
+                <p class="col-md-6" style="margin-bottom:0;display:none;" id="import_subtitle1">Imports & Transhipments</p>
+                <p class="col-md-6" style="margin-bottom:0;display:none;" id="export_subtitle1">Emports & Transhipments</p>
+                <span class="col-md-offset-3">
+                    Reference No -
+                    UL030420001
+                </span>
+            </div>
             <div class="panel-body">
 
                 <div class="row">
@@ -327,4 +342,24 @@
     
 </div>
 
+<script>
+    $( document ).ready(function() {
+      if ($("#input-update-task-status").is(':checked')) {
+            $("#import_subtitle1").show();
+            $("#export_subtitle1").hide();
+            } else {
+            $("#import_subtitle1").hide();
+            $("#export_subtitle1").show();
+            }
+});
+   $('#input-update-task-status').change(function() {
+      if ($("#input-update-task-status").is(':checked')) {
+            $("#import_subtitle1").show();
+            $("#export_subtitle1").hide();
+            } else {
+            $("#import_subtitle1").hide();
+            $("#export_subtitle1").show();
+            }
+  });
+</script>
 

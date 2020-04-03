@@ -13,7 +13,7 @@ namespace CargoPOMail.Controllers
         {
             return View();
         }
-        public ActionResult Imports()
+        public ActionResult Manifest()
         {
             return View();
         }

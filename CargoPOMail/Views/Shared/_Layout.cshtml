@@ -65,6 +65,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="~/Scripts/cHIN_Grid/cHiN-GRID.js"></script>
 
 
+    @*toogle*@
+    <link href="~/Content/bootstrap-toggle.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap2-toggle.min.js"></script>
+
+
     @*<script type="text/javascript">
             var commonStrings = {
                 CurrentUser: "@currentUserId"
@@ -166,24 +171,20 @@ desired effect
                 <!-- Sidebar Menu -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <!-- Optionally, you can add icons to the links -->
-                    <li class="" id=""><a href="@Url.Action("Imports", "Transaction")"><i class="fa fa-plane"></i><i class="fa fa-level-down"></i> <span>Imports</span></a></li>
-                    <li id=""><a href="@Url.Action("Exports", "Transaction")"><i class="fa fa-plane"></i><i class="fa fa-level-up"></i> <span>Exports</span>@*<span class="label label-danger pull-right"> </span>*@</a></li>
-                    @*<li><a href="#"><i class="fa fa-sitemap"></i> <span>Groups</span></a></li>
-                        <li><a href="#"><i class="fa fa-list-alt"></i> <span>Lists</span></a></li>
-                        <li><a href="#"><i class="fa fa-asl-interpreting"></i> <span>Templates</span></a></li>
-                        <li><a href="#"><i class="fa fa-send"></i> <span>Assigned To Me</span><span class="label label-danger pull-right">1</span></a></li>
-                        <li><a href="#"><i class="fa fa-database"></i> <span>Innitiated</span></a></li>*@
-                    <!-- <li class="treeview">
-                      <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+                    <li class="" id=""><a href="@Url.Action("Manifest", "Transaction")"><i class="fa fa-plane"></i><span>Manifest</span></a></li>
+                    @*<li id=""><a href="@Url.Action("Exports", "Transaction")"><i class="fa fa-plane"></i><i class="fa fa-level-up"></i> <span>Reports</span><span class="label label-danger pull-right"> </span></a></li>*@
+                  
+                     <li class="treeview">
+                      <a href="#"><i class="fa fa-file"></i> <span>Reports</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                           </span>
                       </a>
-                      <ul class="treeview-menu">
-                        <li><a href="#">Link in level 2</a></li>
-                        <li><a href="#">Link in level 2</a></li>
+                      <ul class="treeview-menu" >
+                        <li style="margin-left:15px;"><a href="#"><i class="fa fa-file"></i>Report 1</a></li>
+                        <li style="margin-left:15px;"><a href="#"><i class="fa fa-file"></i>Report 2</a></li>
                       </ul>
-                    </li> -->
+                    </li> 
                 </ul>
                 <!-- /.sidebar-menu -->
             </section>
